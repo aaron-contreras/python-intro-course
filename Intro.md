@@ -40,23 +40,30 @@ Hacer un programa orientado a objetos que haga lo siguiente:
         + int(thingToCast)
 
 + ### Data types
-    + Numbers
+    + **Numbers**
         + int
         + float
         + complex
             + i(the imaginary number) -> j 
-    + Strings
+    + **Strings**
         + Strings in python work as char[]
         + x = "Hola mundo"
         + x[2:5] returns "la "
-    + Lists
+        + `len()` returns the length of the String, array or list.
+    + **Lists**
         + Similar to collections in java.
         + Any data type accepted.
         + Build data structures.
         + Casts
             + list(toBeCasted)
-    + Tuples
-    + Dictionaries
+    + **Tuples**
+        + Are immutable.
+        + x = [] -> lists
+        + x = {} -> dictionary
+        + x = () -> tuples
+    + **Dictionaries**
+        + `name["key"]`
+        + similar to a Java Hash map
 
 + Syntax
     + One line comments
@@ -93,10 +100,29 @@ Hacer un programa orientado a objetos que haga lo siguiente:
         ```python
         while(condition):
             ''' '''
+        ```
+        ```python
+        for i in range(start,end,step):
+        ```
+        ```python
+        for i in listName:
+        # i is not the index, i is the element of the list.
+        ```
+        + `break` leave the loop
+        + `continue` next iteration
+        + `pass` ignores the code
     + Functions
         ```python
         def functionName(parameters):
+            return optional
+        functionName(parameter=parameterValue)
         ```
+    + **"Main"**
+
+        + `if __name__ == "__main__":`
+        + __ is private
+        + none is public
+    + When Python runs the "source file" as the main program, it sets the special variable `(__name__)` to have a value `("__main__")`.
 
 Haga un programa que pregunte al usuario su edad y muestre en pantalla si es mayor de edad o no.
 
