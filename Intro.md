@@ -117,6 +117,11 @@ Hacer un programa orientado a objetos que haga lo siguiente:
             return optional
         functionName(parameter=parameterValue)
         ```
+        + Predetermined parameter values
+        ```python
+        def fib(n=20):
+        # assigns a predetermined value to the function
+        ```
     + **"Main"**
 
         + `if __name__ == "__main__":`
@@ -124,7 +129,29 @@ Hacer un programa orientado a objetos que haga lo siguiente:
         + none is public
     + When Python runs the "source file" as the main program, it sets the special variable `(__name__)` to have a value `("__main__")`.
 
+    ```python
+    def fib(n):
+        result = []
+        a,b = 0,1
+
+        while (b<n):
+            result.append(b)
+            a,b = b,a+b
+            # solves backwards to remove the necessity of using a temp variable.
+        return result
+
 Haga un programa que pregunte al usuario su edad y muestre en pantalla si es mayor de edad o no.
 
 
 escriba un programa que pida al usuario un entero positivo y muestre por pantalla los numeros impares de 1 hasta ese numero separado por commas.
+
+
+escriba una funcion que convierta de un numero decimal a binario y otro de binario a decimal sin usar conversiones de python
+
+
+crear funcion que reciba un numero y retorne una lista de todos los numeros primos hasta ese numero.
+Nota: 1 no es primo.
+
+Homework
+
+Gamma functions --> factorials

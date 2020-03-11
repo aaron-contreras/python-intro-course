@@ -5,12 +5,7 @@ def DecToBin(dec):
         result = result + str(binNum)
         dec = dec // 2
     return result
-'''
-def DecToBinRec(dec):
-    if (dec > 1):
-        DecToBinRec(dec // 2)
-    print(dec % 2, end = '')
-'''
+
 def BinToDec(bin):
     result = 0
     numberLen = len(str(bin))
